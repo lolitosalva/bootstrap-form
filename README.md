@@ -7,4 +7,4 @@ With a one time experience with the Design Sprint process in groups, we are task
   
 **_Update 1: 17 March, 2020_**
 
-- This is a simple form done with Bootstrap 4. Though Bootstrap uses JQuery, I used vanilla JS since I don't know how to use JQuery yet. I'll convert into JQuery once I have plenty of time. No submit functionality is needed, just the design interface.
+- This is a simple form done with Bootstrap 4. Though Bootstrap uses JQuery, I used vanilla JS since I don't know how to use JQuery yet. I'll convert into JQuery once I have plenty of time. No submit functionality is needed, just the design of the interface.
