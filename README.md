@@ -1,1 +1,7 @@
-# bootstrap-form
+# Another Bootstrap 4 Form (School Lab Project)
+
+With a one time experience with the Design Sprint process in groups, we are tasked to do an individual lab project. The school project contains three problems and must be solved with the help of the design process.
+
+  Problem 1:
+    "Anthony is a Red Seal chef, a blogger, and a foodie. Every week, he asks his reader, from different age groups, to send him recipes wherein he will try to cook, share his techniques, do his best to improve the recipe, and then write a blog about it. He wants to have an interface wherein his readers would use to submit a recipe (basically a form). He uses WordPress for his blogs but is never a programmer or have just enough knowledge about HTML to get by."
+  
