@@ -3,7 +3,6 @@
 function addIngredient() {
     const div = document.createElement('div');
     div.className = "mb-3";
-    div.setAttribute("style", "transition: 0.3s");
     div.innerHTML = `
       <input type="text" class="form-control mb-3" />
       <button type="button" class="btn btn-primary mr-3" onclick="addIngredient()">Add Ingredient</button>
@@ -19,7 +18,6 @@ function addIngredient() {
   function addInstruction() {
     const div = document.createElement('div');
     div.className = "mb-3";
-    div.setAttribute("style", "transition: 0.3s");
     div.innerHTML = `
       <input type="text" class="form-control mb-3" />
       <button type="button" class="btn btn-primary mr-3" onclick="addInstruction()">Add Instruction</button>
