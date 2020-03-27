@@ -25,7 +25,7 @@ function addIngredient() {
         <input type="text" class="form-control" />
         <button type="button" class="btn btn-outline-danger input-group-prepend" onclick="removeIngredient(this)">Remove</button>
     `;
-    document.querySelector('addINgredientBtn').appendChild(div);
+    document.querySelector('addIngredientBtn').appendChild(div);
     event.preventDefault();
     handleFireButton();
   }
