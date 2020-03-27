@@ -13,7 +13,7 @@ function removeIngredient(input) {
 }
 
 
-document.getElementByElement("button").addEventListener("click", function(event){
+document.getElementByTagName("button").addEventListener("click", function(event){
     event.preventDefault();
     handleFireButton();
 });
