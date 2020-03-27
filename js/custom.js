@@ -26,8 +26,6 @@ function addIngredient() {
         <button type="button" class="btn btn-outline-danger input-group-prepend" onclick="removeIngredient(this)">Remove</button>
     `;
     document.getElementbyId('ingredientDiv').appendChild(div);
-    event.preventDefault();
-    handleFireButton();
   }
   
 function removeIngredient(input) {
@@ -35,5 +33,5 @@ function removeIngredient(input) {
 }
 
 document.querySelector('addIngredientBtn').addEventListener('click', function() {
-    event.preventDEfeault();
+    event.preventDefeault();
 });
