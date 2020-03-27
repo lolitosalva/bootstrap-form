@@ -30,7 +30,7 @@ function addIngredient() {
     `;
     document.getElementById('ingredientDiv').appendChild(div);
     event.preventDefault();
-    handleFireButton();
+    // handleFireButton();
   }
   
 function removeIngredient(input) {
