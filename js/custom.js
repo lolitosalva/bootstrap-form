@@ -52,7 +52,7 @@ function addIngredient() {
 
 
 // CURRENTLY PRESSING BUTTON RESETS THE PAGE AND RETURNS TO THE TOP
-document.querySelector(".addIngredientBtn").addEventListener("click", function(event){
+document.querySelector("button").addEventListener("click", function(event){
     event.preventDefault();
     handleFireButton();
 });
