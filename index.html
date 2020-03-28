@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe Submission Form V2</title>
+    <title>Recipe Submission Form V3</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
         <header class="container mb-3 py-3">
@@ -43,33 +44,70 @@
                 <p class="lead mb-5">
                     If you want your recipe to be featured on my new gig, submit it here! Every week, I'll be picking one recipe from you folks. It could be something from your college survival days or your grandma's top secret custard tart (don't tell her!) and then I'll try my best to cook it and share some techniques on how to further improve it! The improved recipe will then be featured on my front page along with the original recipe (with your credit of course).
                 </p>
-                <h2 class="d-block border-bottom border-dark pb-3 my-3">Submission Options</h2>
-                <p class="lead mb-5">
-                    I'm giving you two different options when sending me your recipe online. Just choose whichever you are comfortable with. I won't be receiving phyiscally mailed recipes as of the moment but stay in touch for further news about that.
-                </p>
-                <div class="row mt-4">
-                    <div class="col-sm-12 col-md-6 mb-4 mb-md-0">
-                        <div class="border border-dark rounded p-3">
-                            <h4 class="mb-3">Upload a Recipe</h4>
-                            <p class="mb-4">
-                                I accept any type of image file as long as the recipe is still readable and clear. You can also upload a text document or pdf of the recipe incase you don't have any means to take a clear picture of the recipe!
-                            </p>
-                            <a href="upload.html" class="btn btn-outline-primary w-100">Upload a File</a>
-                        </div>
+                <h2 class="d-block border-bottom border-dark pb-3 my-3">Recipe Form</h2>
+                <form action="#" class="mb-5">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-sm-12 col-lg-6">
+                            <p class="font-italic text-secondary">Note: All fields are required</p>
+                            <h4 class="border-bottom border-dark pb-3">Recipe Content Heading</h4>
+                            <div class="form-group">
+                                <label class="font-weight-bold" for="recipe-name">Recipe Name</label>
+                                <input type="text" id="recipe-name" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label class="font-weight-bold" for="author-name">Author Name</label>
+                                <input type="text" id="author-name" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label class="font-weight-bold" for="description">Description</label>
+                                <textarea id="description" class="form-control"></textarea>
+                                <p class="font-italic text-secondary mt-2">(Maximum of 250 words)</p>
+                            </div>
+                            <h4 class="border-bottom border-dark pb-3">Recipe Main Content</h4>
+                            <p>Ingredients contain numerous items. Press <span class="text-primary font-weight-bold font-italic">"Add Ingredient"</span> to enter a new item and <span class="text-danger font-weight-bold font-italic">"Remove"</span> to remove an item respectively.</p>
+                            <div class="form-group" id="ingredientDiv">
+                                <label class="font-weight-bold" for="ingredients">Ingredients</label>
+                                <input type="text" id="ingredients" class="form-control mb-3" placeholder="ex. 1 tablespoon of salt">
+                            </div>
+                            <button class="btn btn-outline-primary" onclick="addIngredient()">Add Ingredient</button>
+                            <div class="form-group mt-4 mb-0">
+                                <label class="font-weight-bold" for="instruction">Instructions</label>
+                                <textarea id="instruction" class="form-control"></textarea>
+                            </div>
+                            <div class="container px-0 mb-4">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="form-group mt-4">
+                                            <label class="font-weight-bold" for="serving">Serving</label>
+                                            <input type="text" class="form-control" placeholder="ex. 5 people" id="serving">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group mt-4">
+                                            <label class="font-weight-bold" for="prep-time">Prep Time</label>
+                                            <input type="text" class="form-control" placeholder="ex. 1 hour" id="prep-time">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group mt-4">
+                                            <label class="font-weight-bold" for="cooking-time">Cooking Time</label>
+                                            <input type="text" class="form-control" placeholder="ex. 30 mins." id="cooking-time">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border-top border-dark pt-3">
+                                <p>Submitting your recipe means that you have read the terms of usage and conditions.</p>
+                                <div class="text-center">
+                                    <input type="submit" class="btn btn-primary btn-block" value="Submit Recipe">
+                                </div>
+                            </div>
+                        </div>  
                     </div>
-                    <div class="col-sm-12 col-md-6 mb-5 mb-md-0">
-                        <div class="border border-dark rounded p-3 h-100 d-flex flex-column">
-                            <h4 class="mb-3">Type the Recipe</h4>
-                            <p class="">
-                                Don't feel like uploading some files? Just fill out a form with the recipe details and click submit!
-                            </p>
-                            <a href="type-form.html" class="btn btn-outline-primary mt-auto">Fill Out a Form</a>
-                        </div>
-                    </div>
-                </div>
+                </form>
             </div>
         </main>
-        <footer class="fixed-bottom bg-dark text-light container">
+        <footer class="bg-dark text-light container">
             <div class="row">
                 <p class="col mb-0 py-3">
                     2020 Web Design and Usability Lab Problem 1
@@ -79,6 +117,6 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<!-- <script src="js/custom.js"></script> -->
+<script src="js/custom.js"></script>
 </body>
 </html>
